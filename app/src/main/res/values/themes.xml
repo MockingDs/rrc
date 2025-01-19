@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RRcapp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red</item>
+    </style>
+
+    <style name="Base.Theme.RRcapp.noactionbar">
+<item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+    </style>
+    
+    
+    <style name="TEXT">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+
+    <style name="BUTTON">
+        <item name="background">@color/red</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

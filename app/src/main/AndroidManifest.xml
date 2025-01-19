@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.RRcapp.noactionbar"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Base.Theme.RRcapp.noactionbar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminUpdateMembers"
+            android:exported="false"
+            android:parentActivityName=".Adminuserlist"
+            android:theme="@style/Base.Theme.RRcapp" />
+        <activity
+            android:name=".MembersRetrieveforMembers"
+            android:exported="false"
+            android:parentActivityName=".MembersHome"
+            android:theme="@style/Base.Theme.RRcapp" />
+        <activity
+            android:name=".MembersRetrieveforUsers"
+            android:exported="false"
+            android:parentActivityName=".UserHome"
+            android:theme="@style/Base.Theme.RRcapp" />
+        <activity
+            android:name=".UserProfileUpdate"
+            android:exported="false"
+            android:parentActivityName=".UserHome"
+            android:theme="@style/Base.Theme.RRcapp" />
+        <activity
+            android:name=".Usersattendanceview"
+            android:exported="false"
+            android:parentActivityName=".MembersHome"
+            android:theme="@style/Base.Theme.RRcapp" />
+        <activity
+            android:name=".AdminProfileUpdate"
+            android:exported="false"
+            android:parentActivityName=".AdminHome"
+            android:theme="@style/Base.Theme.RRcapp" />
+        <activity
+            android:name=".AdminAttendanceView"
+            android:exported="false"
+            android:parentActivityName=".AdminHome"
+            android:theme="@style/Base.Theme.RRcapp" />
+        <activity
+            android:name=".AdminMarkAtt"
+            android:exported="false"
+            android:parentActivityName=".AdminHome"
+            android:theme="@style/Base.Theme.RRcapp" />
+        <activity
+            android:name=".AdminAddUsers"
+            android:exported="false"
+            android:parentActivityName=".Adminuserlist"
+            android:theme="@style/Base.Theme.RRcapp" />
+        <activity
+            android:name=".Adminuserlist"
+            android:exported="false"
+            android:theme="@style/Base.Theme.RRcapp" />
+        <activity
+            android:name=".MembersHome"
+            android:exported="false" />
+        <activity
+            android:name=".memberlogin"
+            android:exported="false" />
+        <activity
+            android:name=".UserHome"
+            android:exported="false" />
+        <activity
+            android:name=".UsersLogin"
+            android:exported="false"/>
+
+
+        <activity
+            android:name=".AdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="true" />
+    </application>
+
+</manifest>

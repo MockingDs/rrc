@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AdminAttendanceView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/red">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Present"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Absent"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Classes"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Percentage"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+                </TableRow>
+
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</RelativeLayout>

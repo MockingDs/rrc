@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMarkAtt">
+    <EditText
+        android:inputType="text"
+        android:id="@+id/eventname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="event name"
+        android:background="@drawable/edittextcorner"
+        android:padding="15dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/eventname"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/recyclecard"
+        android:layout_above="@+id/button"
+/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttoncorners"
+        android:textColor="@color/white"
+        android:text="save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+</RelativeLayout>

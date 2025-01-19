@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddUsers">
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:hint="emailaddress"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editTextEmail"
+        />
+    <EditText
+        android:id="@+id/edittextusername"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="username"
+        android:inputType="text"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/addmembers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextusername"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttoncorners"
+        android:text="save"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/clearbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextusername"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttoncorners"
+        android:text="clear"
+        android:layout_toRightOf="@+id/addmembers"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

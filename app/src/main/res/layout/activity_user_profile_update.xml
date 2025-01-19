@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UserProfileUpdate">
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new username" />
+
+    <Button
+        android:id="@+id/buttonUpdateProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:padding="5dp"
+        android:background="@drawable/buttoncorners"
+        android:textColor="@color/white"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
